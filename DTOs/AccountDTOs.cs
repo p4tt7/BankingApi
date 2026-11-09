@@ -6,8 +6,14 @@ public class CreateAccountRequest
     [StringLength(100,MinimumLength=1)]
     public string HolderName { get; set; } = string.Empty;
 
+    [Required]
+    [StringLength(100,MinimumLength=1)]
+    public string HolderLastName { get; set; } = string.Empty;
+
     [Range(0,double.MaxValue, ErrorMessage = "Initial balance cannot be negative.")]
     public decimal InitialBalance { get; set; } = 0;
+    public string Email{get; set;}=string.Empty;
+
 }
 
 
@@ -16,6 +22,7 @@ public class AccountResponse
 {
     public Guid Id { get; set; }
     public string HolderName { get; set; } = string.Empty;
+    public string HolderLastName {get; set;}= string.Empty;
     public decimal Balance { get; set; } 
     public DateTime CreatedAt { get; set; }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\david\\OneDrive\\Escritorio\\Road to Backend\\First Project\\BankingApi\\BankingApi.csproj": {}
+    "C:\\Users\\david\\source\\BankingProject\\api\\BankingApi\\BankingApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\david\\OneDrive\\Escritorio\\Road to Backend\\First Project\\BankingApi\\BankingApi.csproj": {
+    "C:\\Users\\david\\source\\BankingProject\\api\\BankingApi\\BankingApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\david\\OneDrive\\Escritorio\\Road to Backend\\First Project\\BankingApi\\BankingApi.csproj",
+        "projectUniqueName": "C:\\Users\\david\\source\\BankingProject\\api\\BankingApi\\BankingApi.csproj",
         "projectName": "BankingApi",
-        "projectPath": "C:\\Users\\david\\OneDrive\\Escritorio\\Road to Backend\\First Project\\BankingApi\\BankingApi.csproj",
+        "projectPath": "C:\\Users\\david\\source\\BankingProject\\api\\BankingApi\\BankingApi.csproj",
         "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\david\\OneDrive\\Escritorio\\Road to Backend\\First Project\\BankingApi\\obj\\",
+        "outputPath": "C:\\Users\\david\\source\\BankingProject\\api\\BankingApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -30,6 +30,7 @@
         },
         "frameworks": {
           "net9.0": {
+            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {}
           }
@@ -44,12 +45,21 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.400"
       },
       "frameworks": {
         "net9.0": {
+          "framework": "net9.0",
           "targetAlias": "net9.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -76,6 +86,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.22, 9.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[9.0.22, 9.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[9.0.22, 9.0.22]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[9.0.22, 9.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -84,7 +112,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
